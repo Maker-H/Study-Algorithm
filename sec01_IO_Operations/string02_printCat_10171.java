@@ -8,10 +8,5 @@ public class string02_printCat_10171 {
        System.out.println(" )  ( ')");
        System.out.println(" (  /  )");
        System.out.println(" \\(__)|");
-
-       System.out.println("\\    /\\");
-       System.out.println(" )  ( ')");
-       System.out.println("(  /  )");
-       System.out.println(" \\(__)|"); 
     }
 }
