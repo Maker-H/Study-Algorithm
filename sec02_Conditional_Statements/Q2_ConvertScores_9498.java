@@ -1,10 +1,12 @@
+// https://www.acmicpc.net/problem/9498
+
 package sec02_Conditional_Statements;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class ConvertScores_9498 {
+public class Q2_ConvertScores_9498 {
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

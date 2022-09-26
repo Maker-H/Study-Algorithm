@@ -1,3 +1,5 @@
+// https://www.acmicpc.net/problem/2753
+
 package sec02_Conditional_Statements;
 
 import java.io.BufferedReader;
@@ -5,7 +7,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.Buffer;
 
-public class IfLeapyear1Else0_2753 {
+public class Q3_IfLeapyear1Else0_2753 {
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 

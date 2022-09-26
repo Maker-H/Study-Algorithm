@@ -1,4 +1,5 @@
-package sec02_Conditional_Statements;
+// https://www.acmicpc.net/problem/2525
+
 
 /* I slove this question by converting total input minute to hour&minute first. Then calculate hour-to-hour minute-to-minute adding. 
 
@@ -6,10 +7,11 @@ But what I overlooked was I really didn't had to do converting first. No matter 
 
 This means calculation was duplicated and executed twice. If I done converting job lastly, I would only need to add minute. Not adding hour-to-hour minute-to-minute. Only minute-to-minute*/
 
+package sec02_Conditional_Statements;
 import java.io.*;
 import java.util.*;
 
-public class ConvertMinuteToHourMinute {
+public class Q6_ConvertMinuteToHourMinute_2525 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str = br.readLine();

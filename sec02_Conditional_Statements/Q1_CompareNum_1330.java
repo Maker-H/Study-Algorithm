@@ -1,11 +1,12 @@
-package sec02_Conditional_Statements;
+// https://www.acmicpc.net/problem/1330
 
+package sec02_Conditional_Statements;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.StringTokenizer;
-public class CompareNum_1330 {
+public class Q1_CompareNum_1330 {
 public static void main(String[] args) throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     String str = br.readLine();

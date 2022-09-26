@@ -1,9 +1,11 @@
+// https://www.acmicpc.net/problem/1008
+
 package sec01_IO_Operations;
 
 
 import java.util.*;
 import java.io.*;
-public class operation04_divide_1008 {
+public class Q6_operation04_divide_1008 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str = br.readLine();

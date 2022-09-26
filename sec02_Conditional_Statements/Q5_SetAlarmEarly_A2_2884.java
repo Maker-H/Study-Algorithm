@@ -1,3 +1,5 @@
+// https://www.acmicpc.net/problem/2884
+
 /* Most Fast */
 
 
@@ -10,7 +12,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 import java.lang.Math;
 
-public class SetAlarmEarly_A2_2884{
+public class Q5_SetAlarmEarly_A2_2884{
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         String str = bf.readLine();

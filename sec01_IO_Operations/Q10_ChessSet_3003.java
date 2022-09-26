@@ -1,3 +1,5 @@
+// https://www.acmicpc.net/problem/3003
+
 package sec01_IO_Operations;
 
 import java.io.BufferedReader;
@@ -5,7 +7,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 import java.io.IOException;
 
-public class operation07_chessSet_3003 {
+public class Q10_ChessSet_3003 {
     public static void main(String[] args) throws IOException {
 
     int KING=1,QUEEN=1, ROOK=2, BISHOP=2, KNIGHT=2,PAWN=8;
