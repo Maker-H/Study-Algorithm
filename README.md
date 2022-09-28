@@ -2,6 +2,7 @@
 
 - This is a repository for solving an alogrithm exercises by [Baekjun](https://www.acmicpc.net/step)
 - The URL links to each problem is in the code
+- In the code with `improved` and `original` in the title, I made a note what I have learned while solving the problem
 
 </br><br>
 ## Index 
