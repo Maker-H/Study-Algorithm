@@ -1,5 +1,6 @@
 // https://www.acmicpc.net/problem/10871
-
+// https://halfmoonbearlog.tistory.com/57  <-About System.in.read
+// https://halfmoonbearlog.tistory.com/58  <-About while and for loop
 /*
  * I didn't know the existence of System.in.read(); phrase. This code gets one char and return the ASCII of it. If I enter number 0, this code gets number as char. So the code gets number as ASCII of char '0'. Char '0' stands for number 48 and all other number's ASCII is the value that adding 48 to existing number.
  * 

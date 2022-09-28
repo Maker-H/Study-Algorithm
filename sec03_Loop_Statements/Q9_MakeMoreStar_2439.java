@@ -24,5 +24,7 @@ public class Q9_MakeMoreStar_2439 {
             sb.append("\n");
         }
         System.out.println(sb);
+
+        
     }
 }
