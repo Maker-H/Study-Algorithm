@@ -5,11 +5,21 @@ import java.util.StringTokenizer;
 
 public class ex {
     public static void main(String[] args) throws IOException {
+
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-    String str = br.readLine();
-    StringTokenizer st = new StringTokenizer(str);
+        int[] arr = new int [10];
 
-        System.out.println(st.nextToken());
+        for(int i=0; i<10; i++) {
+            int input = Integer.parseInt(br.readLine());
+            arr[i] = input % 42;
+        }
+
+        for(int i=0; i<10; i++) {
+            System.out.println(arr[i]);
+        }
+
+        
 }
 }
