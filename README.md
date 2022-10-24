@@ -1,6 +1,6 @@
 ## Study-Algorithm-baekjoon
 
-- This is a repository for solving an algorithm exercises by [Baekjun](https://www.acmicpc.net/step)
+- This is a repository for algorithm exercises by [Baekjun](https://www.acmicpc.net/step)
 - The URL links to each problem is in the code
 - Code with `improved` and `original` in the title, I wrote a note what I have learned while solving the problem
 
