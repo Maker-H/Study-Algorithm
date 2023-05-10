@@ -24,10 +24,20 @@ math.trunc(1.53)
 
 제곱과 루트 하는 방법
 ``` python
-
 import math
 
 # 둘 다 float 반환
 math.pow(x, y) # x의 y 제곱 
 math.sqrt(4)
+```
+
+<br/>
+
+소문자 -> 대문자, 대문자 -> 소문자
+``` python
+'s'.upper()
+'s'.lower()
+
+'s'.isupper()
+'s'.islower()
 ```
