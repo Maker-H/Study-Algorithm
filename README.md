@@ -1,8 +1,11 @@
 # Algorithm baekjoon/programmers
+ * [알아둬야할 python 문법]()
+ * [오답노트]() 
 
 <br/>
+<br/>
 
-### 알아둬야 할 python 문법
+## 알아둬야 할 python 문법
 
 소수 버리면서 정수만 가져오는 함수
 ``` python
@@ -41,3 +44,13 @@ math.sqrt(4)
 's'.isupper()
 's'.islower()
 ```
+
+
+<br/>
+<br/>
+
+## 오답노트
+
+[프로그래머스] 직각삼각형 출력하기 [link](https://school.programmers.co.kr/learn/courses/30/lessons/120823)
+* 0일때 char과 곱하면 빈 줄 생성되니 주의
+
