@@ -9,6 +9,7 @@
 import math
 math.trunc(1.53)
 ```
+
 <br/>
 
 알파벳인지 숫자인지 확인하는 방법
@@ -17,4 +18,16 @@ math.trunc(1.53)
 '1'.isdigit() # True
 '1h'.isalnum() # True
 '1.h'.isalnum() # False
+```
+
+<br/>
+
+제곱과 루트 하는 방법
+``` python
+
+import math
+
+# 둘 다 float 반환
+math.pow(x, y) # x의 y 제곱 
+math.sqrt(4)
 ```
