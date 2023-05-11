@@ -1,6 +1,7 @@
 # Algorithm baekjoon/programmers
  * [알아둬야할 python 문법]()
  * [오답노트]() 
+ * [다시 풀어야할 문제]()
 
 <br/>
 <br/>
@@ -109,3 +110,9 @@ cnt.most_common(1)
 <br/>
 
 
+
+<br/>
+<br/>
+
+## 다시 풀어야하는 문제
+1. [최빈값 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/120812#)
