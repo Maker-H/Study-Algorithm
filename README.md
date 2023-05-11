@@ -54,3 +54,11 @@ math.sqrt(4)
 [프로그래머스] 직각삼각형 출력하기 [link](https://school.programmers.co.kr/learn/courses/30/lessons/120823)
 * 0일때 char과 곱하면 빈 줄 생성되니 주의
 
+<br/>
+
+[프로그래머스] 최댓값 만들기(2) [link](https://school.programmers.co.kr/learn/courses/30/lessons/120862#)
+* index를 활용하는 것과 ch값을 그대로 활용하는 것의 차이에 주의하자. 혹시 for문 안에서 생각한 대로 풀리지 않는다면 의심해볼것
+
+<br/>
+
+
