@@ -1,4 +1,4 @@
-# Algorithm baekjoon/programmers
+# Algorithm
  * [알아둬야할 python 문법](https://github.com/Maker-H/Study-Algorithm-baekjun#%EC%95%8C%EC%95%84%EB%91%AC%EC%95%BC-%ED%95%A0-python-%EB%AC%B8%EB%B2%95)
  * [오답노트](https://github.com/Maker-H/Study-Algorithm-baekjun#%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8) 
  * [다시 풀어야할 문제](https://github.com/Maker-H/Study-Algorithm-baekjun#%EB%8B%A4%EC%8B%9C-%ED%92%80%EC%96%B4%EC%95%BC%ED%95%98%EB%8A%94-%EB%AC%B8%EC%A0%9C)
