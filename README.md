@@ -60,6 +60,38 @@ chr(45) # 아스키 -> 문자
 ord('a') # 문자 -> 아스키
 ```
 
+<br/>
+
+key가 딕셔너리 안에 있는지 조사하기 in
+key로 value 얻기
+``` python
+user1 = {'name': 홍길동, 'age':19}
+print('name' in user1)
+
+user1.get('age')
+
+user1.add()
+```
+
+<br/>
+
+최빈값 얻기 
+collections 모듈의 counter 클래스
+``` python
+from collections import Counter
+colors = ['red', 'blue', 'red', 'green', 'blue', 'blue']
+cnt = Counter(colors)
+cnt
+# Counter({'blue': 3, 'red': 2, 'green': 1})
+
+# [Counter 클래스의 most_common() 메쏘드는 등장한 횟수를 내림차순으로 정리]
+cnt.most_common()
+# [('blue', 3), ('red', 2), ('green', 1)]
+
+# [상위 1개만 출력]
+cnt.most_common(1)
+```
+
 
 <br/>
 <br/>
