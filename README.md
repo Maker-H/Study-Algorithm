@@ -45,6 +45,13 @@ math.sqrt(4)
 's'.islower()
 ```
 
+<br/>
+
+리스트를 str로
+``` python
+''join.(리스트)
+```
+
 
 <br/>
 <br/>
