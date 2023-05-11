@@ -109,6 +109,9 @@ cnt.most_common(1)
 
 <br/>
 
+[프로그래머스] 최빈값 구하기 [link](https://school.programmers.co.kr/learn/courses/30/lessons/120812#)
+* 카운팅을 최적화 하기 위해선 어떻게 하는게 좋을까? 생각하기 
+
 
 
 <br/>
