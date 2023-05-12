@@ -93,6 +93,13 @@ cnt.most_common()
 cnt.most_common(1)
 ```
 
+<br/>
+
+문자열 자르는 법 split
+``` python
+'1234 56678 1234'.split(' ', 1)
+```
+
 
 <br/>
 <br/>
@@ -112,6 +119,11 @@ cnt.most_common(1)
 [프로그래머스] 최빈값 구하기 [link](https://school.programmers.co.kr/learn/courses/30/lessons/120812#)
 * 카운팅을 최적화 하기 위해선 어떻게 하는게 좋을까? 생각하기 
 
+<br/>
+
+[프로그래머스] 구슬을 나누는 경우의 수 [link](https://school.programmers.co.kr/learn/courses/30/lessons/120840)
+* 4C3 = 4! / (4-3)! * 3! 
+
 
 
 <br/>
@@ -119,3 +131,4 @@ cnt.most_common(1)
 
 ## 다시 풀어야하는 문제
 1. [최빈값 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/120812#)
+2. [구슬을 나누는 경우의 수](https://school.programmers.co.kr/learn/courses/30/lessons/120840)
