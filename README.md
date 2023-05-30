@@ -23,7 +23,7 @@ math.trunc(1.53)
 ```python
 'a'.isalpha() # True
 '1'.isdigit() # True
-'1h'.isalnum() # True
+'1h'.isalnum() # True -> 문자or숫자이면 True
 '1.h'.isalnum() # False
 ```
 
