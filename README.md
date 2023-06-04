@@ -189,7 +189,13 @@ f = [(5, 1), (5, 2), (3, 0), (1, 2), (0, 1)])
 
 ## 다시 풀어야하는 문제
 
+### 프로그래머스 레빌 0 <기초>
 1. [최빈값 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/120812#)
 2. [구슬을 나누는 경우의 수](https://school.programmers.co.kr/learn/courses/30/lessons/120840)
 3. [OX퀴즈](https://school.programmers.co.kr/learn/courses/30/lessons/120907)
 4. [가장 먼 노드](https://school.programmers.co.kr/learn/courses/30/lessons/49189)
+
+<br><br>
+
+### 플로이드 워셜 <최단 거리> 
+1. [플로이드](https://www.acmicpc.net/problem/11404)
