@@ -16,6 +16,17 @@ import math
 math.trunc(1.53)
 ```
 
+
+<br/>
+
+올림하는 함수
+
+```python
+import math
+math.ceil(1.2) # 2
+```
+
+
 <br/>
 
 알파벳인지 숫자인지 확인하는 방법
@@ -123,6 +134,27 @@ D.pop() D.popleft()
 D.extend([]) D.extendleft([])
 D.remove('') -> 해당 item 찾아서 삭제
 D.rotate(숫자) -> 숫자번 만큼 회전, 양수 시계방향, 음수 반시계 방향
+```
+
+<br/>
+
+힙 활용 -> 파이썬은 최소힙
+
+```python
+import heapq
+heap = []
+heapq.heappush(heap, 50)
+
+heap2 = [10, 50, 30]
+heapq.heapify(heap2)
+# [10, 30, 50]
+
+heap_items = [1, 3, 5, 7, 9]
+max_heap = []
+for item in heap_items:
+    heapq.heappush(max_heap, (-item, item))
+
+max_item = heapq.heappop(max_heap)[1]
 ```
 
 <br/>
