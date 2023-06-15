@@ -16,6 +16,17 @@ import math
 math.trunc(1.53)
 ```
 
+
+<br/>
+
+올림하는 함수
+
+```python
+import math
+math.ceil(1.2) # 2
+```
+
+
 <br/>
 
 알파벳인지 숫자인지 확인하는 방법
@@ -127,6 +138,27 @@ D.rotate(숫자) -> 숫자번 만큼 회전, 양수 시계방향, 음수 반시�
 
 <br/>
 
+힙 활용 -> 파이썬은 최소힙
+
+```python
+import heapq
+heap = []
+heapq.heappush(heap, 50)
+
+heap2 = [10, 50, 30]
+heapq.heapify(heap2)
+# [10, 30, 50]
+
+heap_items = [1, 3, 5, 7, 9]
+max_heap = []
+for item in heap_items:
+    heapq.heappush(max_heap, (-item, item))
+
+max_item = heapq.heappop(max_heap)[1]
+```
+
+<br/>
+
 sort 활용
 
 ```python
@@ -189,7 +221,13 @@ f = [(5, 1), (5, 2), (3, 0), (1, 2), (0, 1)])
 
 ## 다시 풀어야하는 문제
 
+### 프로그래머스 레빌 0 <기초>
 1. [최빈값 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/120812#)
 2. [구슬을 나누는 경우의 수](https://school.programmers.co.kr/learn/courses/30/lessons/120840)
 3. [OX퀴즈](https://school.programmers.co.kr/learn/courses/30/lessons/120907)
 4. [가장 먼 노드](https://school.programmers.co.kr/learn/courses/30/lessons/49189)
+
+<br><br>
+
+### 플로이드 워셜 <최단 거리> 
+1. [플로이드](https://www.acmicpc.net/problem/11404)
