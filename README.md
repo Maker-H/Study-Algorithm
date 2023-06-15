@@ -148,13 +148,23 @@ heapq.heappush(heap, 50)
 heap2 = [10, 50, 30]
 heapq.heapify(heap2)
 # [10, 30, 50]
+```
 
+max heap 활용
+```python
 heap_items = [1, 3, 5, 7, 9]
 max_heap = []
 for item in heap_items:
     heapq.heappush(max_heap, (-item, item))
 
 max_item = heapq.heappop(max_heap)[1]
+```
+
+nlargest nsmallest
+``` python
+nums = [1, 3, 5, 7, 9]
+heapq.nlargest(1, nums) # 개수, 리스트
+# [9]
 ```
 
 <br/>
