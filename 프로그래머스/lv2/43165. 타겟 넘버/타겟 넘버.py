@@ -1,19 +1,25 @@
-import sys
-sys.setrecursionlimit(10000)
-count = 0
+from collections import deque
 
-def dfs(numbers, idx, total, target):
-    global count
+def bfs(numbers, target):
+    D = deque()
+    D.append([0, -1])
+    num_len = len(numbers)
+    ans = 0
     
-    if idx == len(numbers):
-        if total == target:
-            count += 1
-        return
+    while D:
+        total, idx = D.popleft()
+        idx += 1
+        
+        if idx < num_len:
+            D.append([total + numbers[idx], idx])
+            D.append([total - numbers[idx], idx])
+        elif idx == num_len:
+            if total == target:
+                ans += 1
+                
+    return ans
+            
     
-    dfs(numbers, idx + 1, total + numbers[idx], target)
-    dfs(numbers, idx + 1, total - numbers[idx], target)
     
 def solution(numbers, target):
-    
-    dfs(numbers, 0, 0, target)    
-    return count
+    return bfs(numbers, target)
