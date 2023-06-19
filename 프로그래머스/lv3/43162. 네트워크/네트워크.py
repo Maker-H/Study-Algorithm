@@ -1,19 +1,20 @@
-cnt = 0
-def dfs(graph, visited, v):
-    global cnt
-    
-    if visited[v] == 1:
-        return
-    
-    visited[v] = 1
-    
-    for w in graph[v]:
-        if visited[w] == 0:
-            dfs(graph, visited, w)
+# bfs 풀이 
 
+from collections import deque
 
+def bfs(node, graph, n, visited):
+    D = deque()
     
+    D.append(node)
+    
+    while D:
+        v = D.popleft()
+        visited[v] = 1
         
+        for w in graph[v]:
+            if visited[w] == 0:
+                D.append(w)
+
 def solution(n, computers):
     graph = [[] * (n + 1) for _ in range(n + 1)]
     visited = [0] * (n + 1)
@@ -28,11 +29,11 @@ def solution(n, computers):
                         graph[i + 1] += [j + 1]
                         graph[j + 1] += [i + 1]
     
-    global cnt
+    cnt = 0
     for i in range(1, n + 1):
         if visited[i] == 0:
             cnt += 1
-        dfs(graph, visited, i)
+        bfs(i, graph, n, visited)
     
     return cnt
         
