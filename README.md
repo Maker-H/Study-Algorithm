@@ -228,7 +228,9 @@ f = [(5, 1), (5, 2), (3, 0), (1, 2), (0, 1)])
 
 <br/>
 
-[dfs] 파이썬에서 리스트는 공유되므로 최단 거리를 구할때 한 번 갔던 길은 두 번 갈 수 없음
+[프로그래머스] 게임맵 최단거리 [link](https://school.programmers.co.kr/learn/courses/30/lessons/1844) 
+- 파이썬에서 리스트는 공유되므로 최단 거리를 구할때 한 번 갔던 길은 두 번 갈 수 없음
+- visited 체크를 언제하는게 좋을지 생각해봐야 할 문제, 이미 덱에 넣은 노드를 다시 넣게 되지 않을지 생각해야함 visitied를 언제 체크하는지에 따라 이미 덱에 넣은 노드를 또 넣게 된다
 
 <br/>
 <br/>
@@ -245,3 +247,7 @@ f = [(5, 1), (5, 2), (3, 0), (1, 2), (0, 1)])
 
 * dfs/bfs 많이 약함, 다 잊어버림 -> 우선순위 큐, dfs/bfs -> 트리 -> 최단거리 순으로 익혀나가기
 * dfs/bfs는 백준으로 익히기
+
+### dfs/bfs
+1. [타겟넘버](https://school.programmers.co.kr/learn/courses/30/lessons/43165)
+2. [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844)
