@@ -250,4 +250,6 @@ f = [(5, 1), (5, 2), (3, 0), (1, 2), (0, 1)])
 
 ### dfs/bfs
 1. [타겟넘버](https://school.programmers.co.kr/learn/courses/30/lessons/43165)
+    - bfs, dfs로 풀어보기
 2. [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844)
+    - visited를 사용하지 않고 dfs, bfs로 풀어보기
