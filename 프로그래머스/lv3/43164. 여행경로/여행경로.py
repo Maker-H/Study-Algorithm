@@ -1,38 +1,28 @@
-def dfs(graph, N, path, here):
-    path.append(here)
-    
-    if len(path) == N + 1:
-        return True
-    
-    if here not in graph:
-        path.pop()
-        return False
-    
-    for i in range(len(graph[here])):
-        there = graph[here][-1]
-        graph[here].pop()
-        
-        if dfs(graph, N, path, there):
-            return True
-        
-        graph[here].insert(0, there)
-        
-    path.pop()
-    return False
-
 def solution(tickets):
-    routes = dict()
-
-    for (start, end) in tickets:
-        routes[start] = routes.get(start, []) + [end]  
+    tick = {}
+    for start, end in tickets:
+        if start not in tick:
+            tick[start] = [end]
+        else:
+            tick[start].append(end)
     
-    for r in routes.keys():
-        routes[r].sort(reverse=True)
-    
-    N = len(tickets)
-    path = []
-    
-    if dfs(routes, N, path, "ICN"):
-        answer = path            
+    # 정렬
+    for n in tick:
+        tick[n].sort(reverse=True)
         
-    return answer
+    answer = []
+    def dfs():
+        stack = ["ICN"]
+
+        while stack:
+
+            tmp = stack[-1]
+            
+            if (tmp not in tick) or (not tick[tmp]):
+                answer.append(stack.pop())
+            else:
+                stack.append(tick[tmp].pop())     
+                
+    dfs()
+    return answer[::-1]
+        
