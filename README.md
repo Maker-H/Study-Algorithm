@@ -253,3 +253,6 @@ f = [(5, 1), (5, 2), (3, 0), (1, 2), (0, 1)])
     - bfs, dfs로 풀어보기
 2. [게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844)
     - visited를 사용하지 않고 dfs, bfs로 풀어보기
+3. !!![여행경로](https://school.programmers.co.kr/learn/courses/30/lessons/43164#)
+    - 이해를 못한 문제, 재귀로 푸는 방법이 있고 stack으로 푸는 방법이 존재.. 
+    - 참고 링크 [link](https://mjmjmj98.tistory.com/103)
