@@ -261,3 +261,5 @@ f = [(5, 1), (5, 2), (3, 0), (1, 2), (0, 1)])
 3. !!![여행경로](https://school.programmers.co.kr/learn/courses/30/lessons/43164#)
     - 이해를 못한 문제, 재귀로 푸는 방법이 있고 stack으로 푸는 방법이 존재.. 
     - 참고 링크 [link](https://mjmjmj98.tistory.com/103)
+3. [아이템 줍기](https://school.programmers.co.kr/learn/courses/30/lessons/87694)
+    - 방법 특이 
