@@ -263,3 +263,9 @@ f = [(5, 1), (5, 2), (3, 0), (1, 2), (0, 1)])
     - 참고 링크 [link](https://mjmjmj98.tistory.com/103)
 3. [아이템 줍기](https://school.programmers.co.kr/learn/courses/30/lessons/87694)
     - 방법 특이 
+
+
+<br><br>
+
+### 정렬
+1. [H-Index](https://school.programmers.co.kr/learn/courses/30/lessons/42747)
