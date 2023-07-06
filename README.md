@@ -244,6 +244,7 @@ f = [(5, 1), (5, 2), (3, 0), (1, 2), (0, 1)])
 - 경우의 수 문제의 경우 '안입는다'도 옵션으로 포함하기 때문에 +1을 한 다음 모두 곱해준다
 
 <br/>
+
 <br/>
 
 ## 다시 풀어야하는 문제
@@ -275,3 +276,12 @@ f = [(5, 1), (5, 2), (3, 0), (1, 2), (0, 1)])
 
 ### 정렬
 1. [H-Index](https://school.programmers.co.kr/learn/courses/30/lessons/42747)
+
+
+<br><br>
+
+### 완전탐색
+1. [소수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/42839#)
+   - 순열 구할 때 itertools.permutations도 사용해보고 permutations를 구현도 해보자
+
+
