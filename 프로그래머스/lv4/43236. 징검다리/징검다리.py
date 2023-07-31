@@ -1,28 +1,37 @@
 def solution(distance, rocks, n):
     answer = 0
-    left, right = 0, distance
-    rocks.append(distance) # 마지막 도착지까지 거리를 계산하기 위해 추가
-    rocks.sort() # 오름차순 정렬
+    start, end = 1, distance # 돌 사이 최소 거리들
+
+    rocks.sort() # 정렬
+    rocks += [distance]
     
-    # 이분 탐색 수행
-    while left <= right:
-        mid = (left + right) // 2 # 특정한 최소거리
-        current, remove =  0, 0 # 현재 위치, 제거할 바위 수
-        min_distance = float('inf') # mid에서 최소 거리
+    while start <= end:
+        del_stones = 0
+        pre_stone = 0
+        mid = (start + end) // 2
         
-        # 거리 구하기
         for rock in rocks:
-            dis = rock - current
-            if dis < mid: # mid 보다 작으면 바위 제거
-                remove += 1
-            else: # mid 보다 작지 않다면 현재 위치 옮기고 mi에서 최소 거리 계산
-                current = rock
-                min_distance = min(min_distance, dis)
-                
-        if remove > n: # n보다 많다면 mid를 줄임
-            right = mid - 1
-        else: # n보다 많지 않다면 최소 거리를 answer에 저장하고 mid를 늘림
-            answer = min_distance
-            left = mid + 1
+            if rock - pre_stone < mid: # 내가 설정한 정답보다 길이가 더 작으면 삭제 해야함 최소값 안되기 때문
+                del_stones += 1
+            else: # 내가 설정한 정답보다 길이가 더 길면 mid가 최소값이니까 다음 돌로 넘어감
+                pre_stone = rock
+            if del_stones > n: #제거된 돌이 문제 조건 보다 크면 for문을 나온다
+                break
+            
+        print("start: ", start, "end: ", end, "mid: ", mid, "del_stones: ", del_stones)
         
+        if del_stones > n: # 만약 삭제한 돌이 n보다 크다면 너무 많이 지운 것 mid를 더 작게 갱신
+            end = mid - 1
+        else: # 만약 삭제한 돌이 n보다 작거나 같다면 너무 적게 지운 것 mid를 더 크게 갱신
+            start = mid + 1
+            answer = mid
+    
+            
     return answer
+        
+            
+            
+        
+                
+            
+    
