@@ -285,3 +285,10 @@ f = [(5, 1), (5, 2), (3, 0), (1, 2), (0, 1)])
    - 순열 구할 때 itertools.permutations도 사용해보고 permutations를 구현도 해보자
 
 
+
+<br><br><br>
+
+# 알아둬야할 SQL 문법
+* where in 사용할 때는 ```where ~ in ('')``` 이렇게 사용해야 한다
+* 날짜 형식은 ```date_format(컬럼명, '%y-%m-%d') as 컬럼명``` 이런식으로 사용해야 한다
+* order by를 여러개 걸고 싶으면 ```order by 컬럼 오/내, 컬럼 오/내``` 이런식으로 이어서 사용하면 된다
