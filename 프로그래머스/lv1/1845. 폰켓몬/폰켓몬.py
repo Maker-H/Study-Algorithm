@@ -1,16 +1,11 @@
+from itertools import combinations
 def solution(nums):
-    have_len = len(nums) // 2
-    nums.sort()
-    # print(nums)
+    collect_nums = len(nums) // 2
+    nums = set(nums)
     
-    tmp = 0
-    cnt = 0
-    for n in nums:
-        if n != tmp:
-            tmp = n
-            cnt += 1
-    
-    if cnt >= have_len:
-        return have_len
+    if len(nums) > collect_nums:
+        return collect_nums
     else:
-        return cnt
+        return len(nums)
+    
+    
