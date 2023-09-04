@@ -1,16 +1,17 @@
 from collections import defaultdict
 def solution(clothes):
+    # print(clothes)
     closet = defaultdict(list)
     
-    for name, c_type in clothes:
-        closet[c_type].append(name)
-
-    c_list = []
-    for e in closet:
-        c_list.append(len(closet[e]) + 1)
-    
-    answer = 1
-    for i in c_list:
-        answer *= i
+    for cloth, type in clothes:
+        # print(cloth, type)
+        closet[type].append(cloth)
+    # print(closet)
         
+    answer = 1
+    for c in closet:
+        # print(closet[c])
+        answer *= len(closet[c]) + 1
+    # print(answer)
     return answer - 1
+        
