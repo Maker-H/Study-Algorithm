@@ -1,9 +1,14 @@
 def solution(arr):
-    answer = []
-    answer.append(arr[0])
+    answer = [arr[0]]
     
-    for i in arr:
-        if i != answer[-1]:
-            answer.append(i)
-            
+    tmp = arr[0]
+    for i, a in enumerate(arr):
+        # print("i: ", i, "a: ", a)
+        if i == 0:
+            continue
+        
+        if a != tmp:
+            tmp = a
+            answer.append(a)
+    
     return answer
