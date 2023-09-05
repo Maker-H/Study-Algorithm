@@ -1,20 +1,28 @@
 import math
 def solution(progresses, speeds):
-    answer = []
-    days = []
+    days = [] 
+
     for i in range(len(progresses)):
         days.append(math.ceil((100 - progresses[i]) / speeds[i]))
-
+    print(days)
+    
     tmp = days[0]
-    count = 1
-    for i in range(1, len(days)):
-        if tmp < days[i]:
-            answer.append(count)
-            count = 1
-            tmp = days[i]
-        else:
-            count += 1
-            
-    answer.append(count)
+    cnt = 0
+    answer = []
+    for i, d in enumerate(days):
+        if i == 0:
+            cnt = 1
+            continue
+        print("d ", d, "cnt ", cnt)
+        if d > tmp:
+            tmp = d
+            answer.append(cnt)
+            cnt = 0
+        cnt += 1
+        
+    # print(cnt)
+    if cnt != 0:
+        answer.append(cnt)
         
     return answer
+        
