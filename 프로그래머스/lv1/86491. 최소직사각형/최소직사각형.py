@@ -1,20 +1,22 @@
 def solution(sizes):
-    max_a = sizes[0][0]
-    max_b = sizes[0][1]
-    
-    for i in range(1, len(sizes)):
-        a1, b1 = max_a, max_b
-        a2, b2 = sizes[i]
+    tmp_width = tmp_height = 0
+    answer = 0
+    for size in sizes:
+        x = size[0]
+        y = size[1]
         
-        vanila = abs(a1 - a2) + abs(b1 - b2)
-        reverse = abs(a1 - b2) + abs(b1 - a2)
+        if size[0] < size[1]:
+            x = size[1]
+            y = size[0]
+            
+        if tmp_width < x:
+            tmp_width = x
         
-        if vanila < reverse:
-            max_a = max(a1, a2)
-            max_b = max(b1, b2)
-        else:
-            max_a = max(a1, b2)
-            max_b = max(a2, b1)
+        if tmp_height < y:
+            tmp_height = y
+        
+        print(tmp_width, tmp_height)
+        answer = tmp_width * tmp_height
     
-    return max_a * max_b
-                
+            
+    return answer
