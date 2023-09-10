@@ -1,17 +1,29 @@
 import heapq
 def solution(scoville, K):
-    heapq.heapify(scoville)
-    count = 0
-    
-    
-    while scoville[0] < K:
-        first = heapq.heappop(scoville)
-        second = heapq.heappop(scoville)
-        heapq.heappush(scoville, first + second * 2)
-        count += 1
-    
-        if len(scoville) == 1 and scoville[0] < K:
-            return -1
-    
+    ls = []
+    for s in scoville:
+        heapq.heappush(ls, s)
         
-    return count
+    tmp = 0
+    cnt = 0
+    while ls[0] < K:
+        if len(ls) == 1 and ls[0] < K:
+            return -1
+        s1 = heapq.heappop(ls)
+        s2 = heapq.heappop(ls)
+        
+        tmp = s1 + (s2 * 2)
+        
+        # print(s1, s2)
+        
+        heapq.heappush(ls, tmp)
+    
+        cnt += 1
+        
+        # print(ls)
+        
+        # print(cnt)
+    
+    return cnt
+        
+        
