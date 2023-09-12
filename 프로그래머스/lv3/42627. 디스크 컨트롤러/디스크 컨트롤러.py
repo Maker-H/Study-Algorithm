@@ -1,23 +1,23 @@
 import heapq
+
 def solution(jobs):
-    answer = count = i = 0
-    start = -1
-    end = 0
+    answer, now, i = 0, 0, 0
+    start = -1 
     heap = []
-
-    while len(jobs) > i:
-        for job in jobs:
-            if start < job[0] <= end:
-                heapq.heappush(heap, [job[1], job[0]])
-
-        if heap:
-            job = heapq.heappop(heap)
-            start = end
-            end += job[0]
-            answer += end - job[1]
-            i += 1
-        else:
-            end += 1
-
+    
+    while i < len(jobs):
+        # 현재 시점에서 처리할 수 있는 작업을 heap에 저장
+        for j in jobs:
+            if start < j[0] <= now:
+                heapq.heappush(heap, [j[1], j[0]])
+        
+        if len(heap) > 0: # 처리할 작업이 있는 경우
+            time, job_start = heapq.heappop(heap)
+            start = now
+            now += time
+            answer += now - job_start # 작업 요청시간부터 종료시간까지의 시간 계산
+            i +=1
+        else: # 처리할 작업이 없는 경우 다음 시간을 넘어감
+            now += 1
+                
     return answer // len(jobs)
-            
