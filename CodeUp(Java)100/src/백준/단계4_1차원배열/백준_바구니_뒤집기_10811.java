@@ -1,11 +1,6 @@
-package 백준;
+package 백준.단계4_1차원배열;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class 백준_바구니_뒤집기_10811 {

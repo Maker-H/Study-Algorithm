@@ -1,9 +1,8 @@
-package 백준;
+package 백준.단계4_1차원배열;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.stream.Collectors;
 
