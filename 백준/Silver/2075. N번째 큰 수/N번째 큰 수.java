@@ -1,26 +1,31 @@
-import java.util.*;
-import java.io.*;
- 
-// https://www.acmicpc.net/problem/2075
- 
-class Main {
-    public static void main(String[] args) throws Exception {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st;
- 
-        int n = Integer.parseInt(br.readLine());
-        int[] arr = new int[n*n];
-        int idx =0;
- 
-        for(int i=0; i<n; i++) {
-            st = new StringTokenizer(br.readLine());
-            for(int j=0; j<n; j++) {
-                arr[idx++] = Integer.parseInt(st.nextToken());
-            }
-        }
- 
-        Arrays.sort(arr);
- 
-        System.out.println(arr[n*n - n]);
-    }
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.StringTokenizer;
+
+
+public class Main {
+	public static void main(String [] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		int N = Integer.parseInt(br.readLine());
+		int [] inputs = new int[N * N];
+		
+		for (int i = 0; i < N; i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			for (int j = N * i; j < N * i + N; j++) {
+				if (st.hasMoreTokens()) {
+					inputs[j] = Integer.parseInt(st.nextToken());
+				}
+			}
+		}
+		
+		Arrays.sort(inputs);
+		System.out.println(inputs[N * N - N]);
+	}
+	
 }
